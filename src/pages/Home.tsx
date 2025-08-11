@@ -13,7 +13,7 @@ import useTyping from '../hooks/useTyping'
  * HomePage
  * Landing hero highlighting the name "Nguyễn Tất Được" and animated roles.
  */
-export default function HomePage(): JSX.Element {
+export default function HomePage() {
   // Typing roles to express focus and interests
   const typed = useTyping({
     words: [

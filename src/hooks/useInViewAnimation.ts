@@ -19,7 +19,7 @@ interface InViewOptions {
  * Utility using IntersectionObserver for scroll reveal animations.
  */
 export function useInViewAnimation({ onEnter, rootMargin = '0px 0px -10% 0px' }: InViewOptions) {
-  const ref = useRef<HTMLDivElement | null>(null)
+  const ref = useRef<HTMLLIElement | null>(null)
 
   useEffect(() => {
     if (!ref.current) return

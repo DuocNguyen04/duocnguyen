@@ -4,7 +4,7 @@
  */
 
 import { useCallback, useEffect, useState } from 'react'
-import useEmblaCarousel, { EmblaCarouselType } from 'embla-carousel-react'
+import useEmblaCarousel from 'embla-carousel-react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 /** MediaCarouselProps
@@ -28,9 +28,10 @@ export default function MediaCarousel({ images, ariaLabel }: MediaCarouselProps)
   /** onSelect
    * Sync selected index when slide changes.
    */
-  const onSelect = useCallback((api: EmblaCarouselType) => {
-    setSelectedIndex(api.selectedScrollSnap())
-  }, [])
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return
+    setSelectedIndex(emblaApi.selectedScrollSnap())
+  }, [emblaApi])
 
   /** setupEmbla
    * Bind events and capture snaps when embla ready.
@@ -38,11 +39,11 @@ export default function MediaCarousel({ images, ariaLabel }: MediaCarouselProps)
   useEffect(() => {
     if (!emblaApi) return
     setScrollSnaps(emblaApi.scrollSnapList())
-    onSelect(emblaApi)
+    onSelect()
     emblaApi.on('select', onSelect)
     emblaApi.on('reInit', () => {
       setScrollSnaps(emblaApi.scrollSnapList())
-      onSelect(emblaApi)
+      onSelect()
     })
   }, [emblaApi, onSelect])
 

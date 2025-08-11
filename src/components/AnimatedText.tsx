@@ -19,7 +19,7 @@ interface AnimatedTextProps {
  * Renders a typing animation for the supplied text.
  */
 export default function AnimatedText({ text, speed = 45 }: AnimatedTextProps) {
-  const typed = useTyping(text, speed)
+  const typed = useTyping({ words: [text], typeSpeed: speed })
   return (
     <span className="whitespace-pre-wrap">
       {typed}
