@@ -15,19 +15,18 @@ import { Image, Video, AudioLines, PenTool, Store, Share2, ReceiptText, Megaphon
 export default function SkillsPage() {
   const skills = [
     { label: 'Content', icon: <PenTool size={16} /> },
-    { label: 'Quản lý Shopee / TikTok Shop', icon: <Store size={16} /> },
-    { label: 'AI – Image', icon: <Image size={16} /> },
-    { label: 'AI – Video', icon: <Video size={16} /> },
-    { label: 'AI – Audio', icon: <AudioLines size={16} /> },
-    { label: 'Social Media Content', icon: <Share2 size={16} /> },
+    { label: 'Lập kế hoạch marketing', icon: <Megaphone size={16} /> },
+    { label: 'Quản lý sàn (Hình ảnh, banner)', icon: <Store size={16} /> },
+    { label: 'AI image', icon: <Image size={16} /> },
+    { label: 'AI video', icon: <Video size={16} /> },
     { label: 'Landing Page', icon: <Globe size={16} /> },
-    { label: 'Python/Java', icon: <Database size={16} /> },
-    { label: 'Marketing (DTC Holdings)', icon: <Megaphone size={16} /> },
+    { label: 'SEO website', icon: <ReceiptText size={16} /> },
+    { label: 'Tối ưu chỉ số ads', icon: <Share2 size={16} /> },
   ]
 
   return (
     <>
-      <SEO title="Skills | Portfolio" description="Các kỹ năng nổi bật: Content, E-commerce, AI đa nền tảng, Social, Web development, Data analysis, Kế toán hóa đơn, Marketing." />
+      <SEO title="Skills | Portfolio" description="Content, Lập kế hoạch marketing, Quản lý sàn (Hình ảnh, banner), AI image, AI video, Landing Page, SEO website, Tối ưu chỉ số ads." />
       <Section title="Kỹ năng" subtitle="Những gì mình làm tốt và yêu thích">
         <div className="flex flex-wrap gap-3">
           {skills.map((s) => (
