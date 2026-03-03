@@ -43,20 +43,19 @@ export default function ProjectsPage() {
       id: 'fb-post',
       title: 'Facebook Post – Chia sẻ tips',
       cover:
-        'https://res.cloudinary.com/diiv0wyzv/image/upload/v1754926052/z6897391631862_1d3891bf85b02aa32e191f34db3df744_xt8qds.jpg',
-      description:
-        'Album ảnh + caption ngắn gãy gọn, nhấn mạnh lợi ích và USP, tối ưu hashtag.',
+        'https://res.cloudinary.com/diiv0wyzv/image/upload/v1772506962/f15c0ceb-47b1-4dd6-9274-4928a0668658_iicusp.jpg',
+      description: 'Viết bài chuẩn SEO & Phát triển KeyHook đa nền tảng.',
       platform: 'Facebook',
       year: '2024',
-      role: 'Content Writer / Designer',
+      role: 'Visual Creator',
       tags: ['Album', 'Caption ngắn', 'Hashtag', 'Canva', 'Insight'],
       highlights: [
-        'Tăng tương tác bài viết +28% so với trung bình page.',
-        'Thiết kế template có thể tái sử dụng cho series “Tips”.',
+        'Chuẩn hóa hình ảnh chuyên nghiệp, sản xuất Video/Audio bằng AI.',
       ],
       gallery: [
-        'https://res.cloudinary.com/diiv0wyzv/image/upload/v1754925657/z6897372780367_260b5e596b9eb232504d4a0d000327ff_or7ocj.jpg',
-        'https://res.cloudinary.com/diiv0wyzv/image/upload/v1754925480/z6897360545265_241cc0a990ee390f955fb0d637a53650_et0pyf.jpg',
+        'https://res.cloudinary.com/diiv0wyzv/image/upload/v1772507032/f9945f5e-3b1d-4739-9507-e3a1f90f3cb2_zidhhb.jpg',
+        'https://res.cloudinary.com/diiv0wyzv/image/upload/v1772507107/471fbf25-0476-4dca-adfb-dc532be9b8b9_baoq4e.jpg',
+        'https://res.cloudinary.com/diiv0wyzv/image/upload/v1772507175/08486eab-5b7a-4ddf-b983-016f4166e577_h8vre3.jpg',
       ],
       link: 'https://www.facebook.com/tamnong.vietnam',
     },
