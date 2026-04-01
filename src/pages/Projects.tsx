@@ -19,7 +19,7 @@ export default function ProjectsPage() {
   const data: Project[] = [
     {
       id: 'tiktok-content',
-      title: 'TikTok Short – Sản phẩm A',
+      title: 'TikTok Short',
       cover:
         'https://res.cloudinary.com/diiv0wyzv/image/upload/v1754926723/z6897420855291_62e22da9eddad1bff832e30d5efcc2b1_s1qznz.jpg',
       description:
